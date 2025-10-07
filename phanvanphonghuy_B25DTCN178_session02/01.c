@@ -1,35 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    // Kieu du lieu nguyen co dau, kich thuoc nho (2 byte)
-    short a = 10; // short: so nguyen nho, pham vi tu -32,768 den 32,767
+    short a = 10; //so nguyen nho, 2 byte
+    int b = 20; //so nguyen thong dung, 4 byte
+    long c = 30; //so nguyen lon hon int, 4 hoac 8 byte
+    long long d = 40; //so nguyen rat lon, 8 byte
+    unsigned short e = 50; //so nguyen duong nho, 2 byte
+    unsigned int f = 60; //so nguyen duong, 4 byte
+    unsigned long g = 70; //so nguyen duong lon, 4 hoac 8 byte
+    unsigned long long h = 80; //so nguyen duong rat lon, 8 byte
+    char i = 'a'; // char: ky tu don, 1 byte
 
-    // Kieu so nguyen thong thuong (4 byte)
-    int b = 100; // int: so nguyen, duoc su dung pho bien nhat
-
-    // Kieu so nguyen lon hon int (thuong 4 hoac 8 byte tuy he thong)
-    long c = 1000; // long: so nguyen lon hon int
-
-    // Kieu so nguyen rat lon (8 byte)
-    long long d = 1000000; // long long: so nguyen rat lon dung cho gia tri lon
-
-    // Kieu so nguyen khong dau, kich thuoc nho (2 byte)
-    unsigned short e = 65000; // unsigned short: so nguyen duong nho (0 den 65535)
-
-    // Kieu so nguyen khong dau (4 byte)
-    unsigned int f = 4000000000; // unsigned int: chi luu gia tri duong (0 den ~4 ty)
-
-    // Kieu so nguyen khong dau lon hon int (4 hoac 8 byte)
-    unsigned long g = 5000000000; // unsigned long: so nguyen duong lon
-
-    // Kieu so nguyen khong dau rat lon (8 byte)
-    unsigned long long h = 10000000000; // unsigned long long: so nguyen duong rat lon
-
-    // Kieu du lieu ky tu (1 byte)
-    char i = 'A'; // char: ky tu don, luu ma ASCII (vi du 'A' = 65)
-
-    // In ra gia tri cac bien
-    printf("Gia tri cac bien:\n");
     printf("short a = %d\n", a);
     printf("int b = %d\n", b);
     printf("long c = %ld\n", c);
